@@ -11,7 +11,7 @@ const heartButtons = document.getElementsByClassName('heart-btn');
  }
 
 
- 
+
 // Call button functionalities 
 const callBtns = document.getElementsByClassName('call-btn');
 
@@ -62,3 +62,48 @@ document.getElementById('btn-clear').addEventListener('click', function () {
     const callHistoryClear = document.getElementById('call-history');
     callHistoryClear.innerHTML = "";
 })
+
+
+//  Copy Button Functionalities
+const copyButtons = document.getElementsByClassName('copy-btn');
+
+for(let copyButton of copyButtons){
+    copyButton.addEventListener('click', function (){
+        
+        const numberToCopy = copyButton.parentNode.parentNode.querySelector('.contact-number').innerText;
+        navigator.clipboard.writeText(numberToCopy).then(() => {
+        alert(`The number has been copied ${numberToCopy}`)
+
+        const copyCount = document.getElementById('copy-count');
+            let currentCount = parseInt(copyCount.innerText);
+            copyCount.innerText = currentCount + 1;
+            });
+    });
+};
+
+
+
+
+
+
+// Copy Button Functionalities
+
+// const copyButtons = document.getElementsByClassName('copy-btn');
+
+// for (let copyButton of copyButtons) {
+//     copyButton.addEventListener('click', function () {
+//         // card element ধরছি
+//         const card = copyButton.closest('.card');
+
+//         // card এর ভেতরের number element ধরছি
+//         const numberToCopy = card.querySelector('.number').innerText;
+
+//         navigator.clipboard.writeText(numberToCopy).then(() => {
+//             alert(`The number has been copied: ${numberToCopy}`);
+
+//             const copyCount = document.getElementById('copy-count');
+//             let currentCount = parseInt(copyCount.innerText);
+//             copyCount.innerText = currentCount + 1;
+//         });
+//     });
+// }
