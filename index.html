@@ -31,19 +31,19 @@
                     <div class="heart-coin-copy flex justify-between items-center gap-3">
                         <!-- Heart -->
                         <div class="heart flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
-                            <h4 class="font-extrabold"><span id="nav-zero">0</span></h4>
+                            <h4 class="font-extrabold"><span id="heart-count">0</span></h4>
                             <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
                         </div>
 
                         <!-- Coin -->
                         <div class="coin flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
-                            <h4 class="font-extrabold">100</h4>
+                            <h4 class="font-extrabold"><span id="coin-hundred">100</span></h4>
                             <img class="w-[27px] h-[27px]" src="assets/coin.png" alt="">
                         </div>
 
                         <!-- Copy -->
                         <div class="copy flex justify-center items-center w-[120px] h-[50px] rounded-[50px] bg-[#00A63E] border-2 border-[#00A63E]">
-                              <p class="font-semibold text-white"><span>0</span> Copy</p>
+                              <p class="font-semibold text-white"><span id="copy-zero">0</span> Copy</p>
                         </div>
                     </div>
             </div>
@@ -51,8 +51,8 @@
         </nav>
         
         <!-- Banner Section -->
-        <section class="banner-container flex flex-col justify-center items-center py-[20px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
-            <img class="mb-5 w-[100px] h-[100px]" src="assets/logo-dark.png" alt="">
+        <section class="banner-container min-h-60 max-w-full flex flex-col justify-center items-center py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <img class="mb-5 w-26" src="assets/logo-dark.png" alt="">
             <h1 class="mb-5 text-[40px] font-bold text-white">Emergency Service Directory</h1>
             <p class="semi-bold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
@@ -72,16 +72,17 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                            <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                               <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                               <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                            </div>
 
-                                                           <div id="hrt-1">
-                                                                <i class="fa-regular fa-heart"></i>
+                                                           <div class="heart-btn cursor-pointer">
+                                                                <i class=" fa-regular fa-heart"></i>
                                                            </div>
                                                     
                                                 </div>
                                                 
                                                 <h1 class="font-bold text-xl">National Emergency Number</h1>
+                                            
                                                 <p class="mb-4 font-normal text-gray-600">National Emergency</p>
 
                                                 <h2 class="font-bold text-3xl mb-1">999</h2>
@@ -104,10 +105,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#dfefff] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/police.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/police.png" alt="">
                                                         </div>
 
-                                                        <div id="hrt-2">
+                                                        <div class="heart-btn cursor-pointer">
                                                               <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                     
@@ -136,10 +137,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                          <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/fire-service.png" alt="">
                                                         </div>
                                                         
-                                                        <div id="hrt-3">
+                                                        <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -167,10 +168,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/ambulance.png" alt="">
                                                         </div>
                                                          
-                                                        <div id="hrt-4">
+                                                        <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -198,9 +199,9 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                         </div>
-                                                          <div id="hrt-5">
+                                                          <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                          </div>
                                                 </div>
@@ -228,10 +229,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                         </div>
 
-                                                        <div id="hrt-6">
+                                                        <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -259,10 +260,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                         </div>
 
-                                                         <div id="hrt-7">
+                                                         <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -290,10 +291,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                         </div>
                                                     
-                                                        <div id="hrt-8">
+                                                        <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -321,10 +322,10 @@
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
                                                         <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
-                                                        <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                                                        <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                         </div>
 
-                                                    <div id="hrt-9">
+                                                    <div class="heart-btn cursor-pointer">
                                                             <i class="fa-regular fa-heart"></i>
                                                         </div>
                                                 </div>
@@ -351,7 +352,9 @@
 
 
                       </div>
+ 
 
+                      <!-- Call History Section -->
 
                       <div class="history-box bg-white rounded-[12px] col-span-3 shadow-lg p-5">
                                   <nav class="flex justify-between items-center">
@@ -370,6 +373,6 @@
 
     </main>
     
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
