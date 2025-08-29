@@ -18,31 +18,31 @@
     <main>
  
         <!-- Navbar -->
-        <nav class="flex justify-between items-center px-[60px] py-[24px]">
+        <nav class="flex flex-col md:flex-row justify-between items-center px-5 md:px-[60px] py-4 md:py-[24px] gap-4 md:gap-0">
             
             <!-- Nav Left -->
-            <div class="nav-left flex items-center">
+            <div class="nav-left flex items-center md:gap-1">
                 <img class="w-[60px] h-[60px]" src="assets/logo.png" alt="">
                 <h2 class="ml-5 text-2xl font-extrabold text-[#006747]">Emergency<br>Service</h2>
             </div>
             
             <!-- Nav Right -->
-            <div class="nav-right">
-                    <div class="heart-coin-copy flex justify-between items-center gap-3">
+            <div class="nav-right w-full md:w-auto">  
+                    <div class="heart-coin-copy flex flex-col sm:flex-row justify-between items-center gap-3">
                         <!-- Heart -->
-                        <div class="heart flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
+                        <div class="heart flex justify-center items-center gap-2 w-full sm:w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
                             <h4 class="font-extrabold"><span id="heart-count">0</span></h4>
                             <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
                         </div>
 
                         <!-- Coin -->
-                        <div class="coin flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
+                        <div class="coin flex justify-center items-center gap-2 w-full sm:w-[120px] h-[50px] rounded-[50px] bg-[#41FF6B1A] border-2 border-[#41FF6B1A]">
                             <h4 class="font-extrabold"><span id="coin-balance">100</span></h4>
                             <img class="w-[27px] h-[27px]" src="assets/coin.png" alt="">
                         </div>
 
                         <!-- Copy -->
-                        <div class="copy flex justify-center items-center w-[120px] h-[50px] rounded-[50px] bg-[#00A63E] border-2 border-[#00A63E]">
+                        <div class="copy flex justify-center items-center w-full sm:w-[120px] h-[50px] rounded-[50px] bg-[#00A63E] border-2 border-[#00A63E]">
                               <p class="font-semibold text-white"><span id="copy-count">0</span> Copy</p>
                         </div>
                     </div>
@@ -51,23 +51,29 @@
         </nav>
         
         <!-- Banner Section -->
-        <section class="banner-container min-h-60 max-w-full flex flex-col justify-center items-center py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <section class="banner-container min-h-[15rem] max-w-full flex flex-col justify-center items-center px-4 py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
             <img class="mb-5 w-26" src="assets/logo-dark.png" alt="">
             <h1 class="mb-5 text-[40px] font-bold text-white">Emergency Service Directory</h1>
             <p class="semi-bold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
 
-        <!-- Main Section -->
-         <section class="main-container bg-[#f5fff6]">
+        <!-- Main Functionality Section -->
+         <section class="main-container bg-[#f5fff6] w-full ">
+            
+           <section>
 
-              <div class="service-container w-11/12 w- mx-auto py-14 grid grid-cols-12 gap-12">
+                <div class="whole-container w-full w-11/12 mx-auto p-12 grid grid-cols-12 gap-10">
 
-                      <div class="service-box col-span-9">
-                                 
-                                 <!-- Service Cards -->
-                                 <div class="service-card-container grid grid-cols-3 gap-x-12 gap-y-5">
+                      <!-- Service Cards -->
+                        <div class="service-box col-span-9">
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                 <!-- <div class="service-card-container grid grid-cols-3 gap-x-12 gap-y-5"> -->
+
+                                    <div class="service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-x-12 md:gap-y-12">
+
+                                            <!-- <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);"> -->
+
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -104,7 +110,9 @@
                                             </section>
                                             
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <!-- <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);"> -->
+
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -136,7 +144,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -167,7 +175,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -198,7 +206,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -228,7 +236,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -259,7 +267,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -290,7 +298,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -321,7 +329,7 @@
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);">
+                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -355,31 +363,26 @@
                                  </div>
 
 
-                      </div>
- 
+                        </div>
 
-                      <!-- Call History Functionality -->
-
-                      <div class="history-box bg-white rounded-[12px] col-span-3 shadow-lg p-5">
-                                  <div>
-                                       <nav class="flex justify-between items-center">
-                                       <h2><i class="fa-regular fa-clock"></i> <span class="font-semibold">Call History</span></h2>
-                                       <button id="btn-clear" class="btn bg-[#00A63E] text-white btn-outline rounded-3xl">Clear</button>
-                                       </nav>
-                                  </div>
-
+                      <!-- Call History Functionality --> 
+                        <div class="history-box bg-white rounded-[12px] col-span-3 shadow-lg">
+                                
+                                    <nav class="flex flex-col justify-between md:flex-row items-center gap-2 p-5">
+                                        <h2><i class="fa-regular fa-clock"></i> <span class="font-semibold">Call History</span></h2>
+                                        <button id="btn-clear" class="btn bg-[#00A63E] text-white btn-outline rounded-3xl">Clear</button>
+                                    </nav>
+                                  
                                   <div id="call-history">
 
                                   </div>
-                      </div>
+                        </div>
 
-                      
+                </div>
 
-              </div>
-
+              </section>
 
          </section>
-
 
     </main>
     
