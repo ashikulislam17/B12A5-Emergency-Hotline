@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B12A5 Emergency Hotline</title>
+    <!-- Favicon Link -->
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <!-- Tailwind & Daisy UI CDN Link  -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -14,7 +15,6 @@
 </head>
 <body>
 
-    
     <main>
  
         <!-- Navbar -->
@@ -51,7 +51,7 @@
         </nav>
         
         <!-- Banner Section -->
-        <section class="banner-container min-h-[15rem] max-w-full flex flex-col justify-center items-center px-4 py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <section class="banner-container min-h-[15rem] flex flex-col justify-center items-center px-4 py-6 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
             <img class="mb-5 w-26" src="assets/logo-dark.png" alt="">
             <h1 class="mb-5 text-[40px] font-bold text-white">Emergency Service Directory</h1>
             <p class="semi-bold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -62,21 +62,17 @@
             
            <section>
 
-                <div class="whole-container w-full w-11/12 mx-auto p-12 grid grid-cols-12 gap-10">
+                <div class="whole-container w-11/12 mx-auto p-12 grid grid-cols-12 gap-10 md:grid-cols-12 md:gap-10">
 
                       <!-- Service Cards -->
-                        <div class="service-box col-span-9">
-
-                                 <!-- <div class="service-card-container grid grid-cols-3 gap-x-12 gap-y-5"> -->
+                        <div class="service-box col-span-9 md:col-span-9">
 
                                     <div class="service-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-x-12 md:gap-y-12">
 
-                                            <!-- <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);"> -->
-
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
-                                                    <div class="flex justify-between items-center mb-4">
+                                                <div class="flex justify-between items-center mb-4">
                                                            <div class="w-[60] h-[60] bg-[#ffe3e2] p-2 rounded-lg">
                                                                <img class="w-3 md:w-8" src="assets/emergency.png" alt="">
                                                            </div>
@@ -93,26 +89,25 @@
 
                                                 <h2 class="contact-number font-bold text-3xl mb-1">999</h2>
 
-                                                <div class="all mb-4 w-[50px] h-[35px] rounded-2xl bg-[#F2F2F2] p-1">
+                                                <div class="mb-4 w-[50px] h-[35px] rounded-2xl bg-[#F2F2F2] p-1">
                                                     <p class="font-normal text-gray-600 text-center">All</p>
                                                 </div>
-                                        </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                      
-                                                     <!-- <button class="copy-btn btn bg-white text-[#5C5C5C] w-1/2 rounded-lg"><i
-                                    class="fa-regular fa-copy"></i>Copy</span></button> -->
+                                            </div>
+                                            <!-- Button Div -->
+                                            <div class="btn-div flex justify-between items-center mt-2">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
 
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
-                                                </div>
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
+                                            </div>
                                                 
                                             </section>
                                             
 
-                                            <!-- <section class="contact-card bg-white p-5 w-[350px] h-[300px] rounded-[12px]" style="box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);"> -->
-
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -134,17 +129,22 @@
                                                 <div class="all mb-4 w-[70px] h-[35px] rounded-2xl bg-[#F2F2F2] p-1">
                                                     <p class="font-normal text-gray-600 text-center">Police</p>
                                                 </div>
-                                        </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                            </div>
+                                                   <!--Button Div  -->
+                                                <div class="btn-div flex justify-between items-center mt-9">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -166,16 +166,21 @@
                                                     <p class="font-normal text-gray-600 text-center">Fire</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                   <!--Button Div  -->
+                                                <div class="btn-div flex justify-between items-center mt-9">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -197,16 +202,21 @@
                                                     <p class="font-normal text-gray-600 text-center">Health</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                   <!--Button Div  -->
+                                                <div class="btn-div flex justify-between items-center mt-5">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -227,16 +237,21 @@
                                                     <p class="font-normal text-gray-600 text-center">Help</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                   <!--Button Div  -->
+                                                <div class="btn-div flex justify-between items-center mt-5">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -258,16 +273,21 @@
                                                     <p class="font-normal text-gray-600 text-center">Govt.</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                   <!-- Button Div -->
+                                                <div class="btn-div flex justify-between items-center mt-5">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -289,16 +309,21 @@
                                                     <p class="font-normal text-gray-600 text-center">Electricity</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                   <!-- Button Div -->
+                                                <div class="btn-div flex justify-between items-center mt-8">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -321,15 +346,21 @@
                                                 </div>
                                         </div>
                                                    
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                <!-- Button Div -->
+                                                <div class="btn-div flex justify-between items-center mt-8">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
                                                 
                                             </section>
 
 
-                                            <section class="contact-card bg-white p-5 rounded-[12px] shadow-md">
+                                            <section class="contact-card w-full flex flex-col min-h-[320px] bg-white p-5 rounded-[12px] shadow-md">
                                                 
                                             <div>
                                                     <div class="flex justify-between items-center mb-4">
@@ -351,11 +382,20 @@
                                                     <p class="font-normal text-gray-600 text-center">Travel</p>
                                                 </div>
                                         </div>
-                                                   
-                                                <div class="btn-div">
-                                                     <button class="copy-btn btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
-                                                     <button class="call-btn btn bg-[#00A63E] text-white btn-outline"><i class="fa-solid fa-phone"></i> Call</button>
+                                                 
+                                                <!-- Button Div -->
+                                                <div class="btn-div flex justify-between items-center mt-1">
+                                                   <button class="copy-btn flex items-center gap-2 border-1 border-gray-300 font-medium text-gray-600 px-7 py-2 rounded-lg">
+                                                      <i class="fa-regular fa-copy"></i>Copy
+                                                   </button>
+
+                                                   <button class="call-btn flex items-center gap-2 bg-[#00A63E] text-white px-7 py-2 rounded-lg">
+                                                   <i class="fa-solid fa-phone"></i> Call
+                                                   </button>
                                                 </div>
+
+
+
                                                 
                                             </section>
 
@@ -366,7 +406,7 @@
                         </div>
 
                       <!-- Call History Functionality --> 
-                        <div class="history-box bg-white rounded-[12px] col-span-3 shadow-lg">
+                        <div class="history-box bg-white rounded-[12px] col-span-3 shadow-lg md:mt-0">
                                 
                                     <nav class="flex flex-col justify-between md:flex-row items-center gap-2 p-5">
                                         <h2><i class="fa-regular fa-clock"></i> <span class="font-semibold">Call History</span></h2>
@@ -380,7 +420,7 @@
 
                 </div>
 
-              </section>
+            </section>
 
          </section>
 
